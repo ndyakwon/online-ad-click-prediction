@@ -151,7 +151,6 @@ def objective(trial):
         gc.collect()
 
     cv_score = np.mean(scores)
-
     return cv_score
 
 study = optuna.create_study(direction='maximize')
